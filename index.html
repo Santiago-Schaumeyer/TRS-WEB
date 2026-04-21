@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>TRS | Tornería y Reparaciones Schaumeyer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <a href="#">
+                <img src="images/logo.png" alt="TRS Tornería y Reparaciones Schaumeyer">
+            </a>    
+        </div>
+        <nav>
+            <a href="#servicios">Servicios</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+     <section class="hero">
+        <div class="hero-content">
+            <h1>TRS</h1>
+            <h2>Tornería y Reparaciones Schaumeyer</h2>
+            <p>Más de 25 años de experiencia en mecanizado y precisión industrial.</p>
+            <div class="cta-container">
+                <a href="https://wa.me/5491133108864?text=Hola, quisiera solicitar un presupuesto para el taller." 
+                    class="btn-wsp" target="_blank">
+                    Solicitar por WhatsApp
+                </a>
+    
+                <a href="#contacto" 
+                    class="btn-mail">
+                    Solicitar por Email
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros" class="section">
+        <h2>Sobre Nosotros</h2>
+        <p>
+            Taller metalúrgico ubicado en Berazategui, Buenos Aires. 
+            Especializado en tornería, rectificados y trabajos de precisión.
+        </p>
+    </section>
+
+    <section id="servicios" class="servicios">
+        <h2>Nuestros Servicios</h2>
+
+        <div class="servicios-grid">
+            <div class="servicio">
+            <h3>Tornería</h3>
+            <p>Fabricación y mecanizado de piezas industriales.</p>
+            <a href="#galeria-torneria" class="btn">Ver trabajos</a>
+            </div>
+
+            <div class="servicio">
+            <h3>Reparaciones</h3>
+            <p>Recuperación de piezas y mantenimiento técnico.</p>
+            <a href="#galeria-reparaciones" class="btn">Ver trabajos</a>
+            </div>
+
+            <div class="servicio">
+            <h3>Fabricación</h3>
+            <p>Desarrollo de soluciones a medida.</p>
+            <a href="#galeria-fabricacion" class="btn">Ver trabajos</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria-torneria" class="galeria">
+        <h2>Trabajos de Tornería</h2>
+        <div class="grid-galeria">
+            <img src="images/fondo-hero.jpeg">
+            <img src="images/fondo-hero.jpeg">
+            <img src="images/fondo-hero.jpeg">
+        </div>
+    </section>
+
+    <section id="galeria-reparaciones" class="galeria">
+      <h2>Trabajos de Reparación</h2>
+      <div class="grid-galeria">
+        <img src="images/fondo-hero.jpeg">
+        <img src="images/fondo-hero.jpeg">
+      </div>
+    </section>
+
+    <section id="galeria-fabricacion" class="galeria">
+      <h2>Trabajos de Fabricación</h2>
+      <div class="grid-galeria">
+        <img src="images/fondo-hero.jpeg">
+        <img src="images/fondo-hero.jpeg">
+      </div>
+    </section>
+
+    <section id="contacto" class="section">
+        <h2>Contacto</h2>
+            <form action="https://formspree.io/f/mvzdbjyr" method="POST">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="tel" name="telefono" placeholder="Teléfono" required>
+                <input type="email" name="email" placeholder="Email">
+                <textarea name="mensaje" placeholder="Descripción del trabajo" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+</section>
+
+    <footer>
+        <p>TRS - Tornería y Reparaciones Schaumeyer</p>
+        <p>Berazategui, Buenos Aires</p>
+    </footer>
+
+    <div class="lightbox" id="lightbox">
+        <span class="cerrar">&times;</span>
+        <img class="lightbox-img" id="lightbox-img">
+    </div>
+
+</body>
+</html>
