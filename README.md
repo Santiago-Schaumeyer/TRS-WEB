@@ -22,6 +22,6 @@ Proyecto web desarrollado para el **Taller Metalúrgico TRS**, una empresa famil
 2. Abre el archivo index.html en tu navegador o utiliza la extensión Live Server de VS Code.
 
 ## 📸 Previsualización
-![Desktop] (images/desktop-view.png)
+![Desktop](images/desktop-view.png)
 
-![Mobile] (images/mobile-view.png)
+![Mobile](images/mobile-view.png)
