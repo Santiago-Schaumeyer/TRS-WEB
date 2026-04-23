@@ -62,7 +62,7 @@
             <div class="servicio">
             <h3>Reparaciones</h3>
             <p>Recuperación de piezas y mantenimiento técnico.</p>
-            <a href="#galeria-reparaciones" class="btn">Ver trabajos</a>
+            <a href="#galeria-reparacion" class="btn">Ver trabajos</a>
             </div>
 
             <div class="servicio">
@@ -75,27 +75,18 @@
 
     <section id="galeria-torneria" class="galeria">
         <h2>Trabajos de Tornería</h2>
-        <div class="grid-galeria">
-            <img src="images/fondo-hero.jpeg">
-            <img src="images/fondo-hero.jpeg">
-            <img src="images/fondo-hero.jpeg">
-        </div>
-    </section>
-
-    <section id="galeria-reparaciones" class="galeria">
-      <h2>Trabajos de Reparación</h2>
-      <div class="grid-galeria">
-        <img src="images/fondo-hero.jpeg">
-        <img src="images/fondo-hero.jpeg">
-      </div>
+        <div class="grid-galeria" id="grid-torneria"></div>
     </section>
 
     <section id="galeria-fabricacion" class="galeria">
-      <h2>Trabajos de Fabricación</h2>
-      <div class="grid-galeria">
-        <img src="images/fondo-hero.jpeg">
-        <img src="images/fondo-hero.jpeg">
-      </div>
+        <h2>Trabajos de Fabricación</h2>
+        <div class="grid-galeria" id="grid-fabricacion"></div>
+    </section>
+
+
+    <section id="galeria-reparacion" class="galeria">
+        <h2>Trabajos de Reparación</h2>
+        <div class="grid-galeria" id="grid-reparacion"></div>
     </section>
 
     <section id="contacto" class="section">
@@ -116,8 +107,18 @@
     </footer>
 
     <div class="lightbox" id="lightbox">
-        <span class="cerrar">&times;</span>
-        <img class="lightbox-img" id="lightbox-img">
+        
+        <div class="lightbox-content">
+            <span class="cerrar" onclick="cerrarLightbox()">&times;</span>
+            <img class="lightbox-img" id="lightbox-img">
+        
+            <div id="lightbox-info" class="lightbox-info">
+                <h2 id="lightbox-titulo"></h2>
+                <p id="lightbox-desc"></p>
+                <p></p>
+            </div>
+        </div>
+
     </div>
 
     <script src="script.js"></script>
