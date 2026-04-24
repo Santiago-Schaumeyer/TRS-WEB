@@ -1,3 +1,17 @@
+:root {
+  /* Colores base */
+  --color-footer: ;   /* Footer */
+  --color-bg-principal:#111111 ;   /* Background principal */
+  --color-bg-alternativo: #1a1a1a; /* Secciones alternas */
+  --color-navbar: #111111;  /* Navbar claro / bloques */
+  --color-texto-principal: #FFFFFF;       /* Texto principal */
+  --color-texto-secundario: #CCCCCC; /* Texto secundario */
+
+  /* Colores de marca */
+  --color-botones: #D32F2F;    /* Botones / links / acentos */
+  --color-red-dark: #B71C1C;
+}
+
 /* =========================
    RESET BÁSICO
 ========================= */
@@ -9,7 +23,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #111111;
+    background-color: var(--color-bg-principal);
     color: #f1f1f1;
     line-height: 1.6;
 }
@@ -36,7 +50,7 @@ html {
 .logo {
     font-size: 28px;
     font-weight: bold;
-    color: #E10600;
+    color: var(--color-botones);
 }
 
 .logo img {
@@ -48,13 +62,13 @@ html {
 .navbar nav a {
     margin-left: 30px;
     text-decoration: none;
-    color: #ffffff;
+    color: var(--color-texto-principal);
     font-weight: 500;
     transition: 0.3s;
 }
 
 .navbar nav a:hover {
-    color: #E10600;
+    color: var(--color-botones);
 }
 
 /* =========================
@@ -108,7 +122,7 @@ html {
 
 .hero button {
     padding: 12px 30px;
-    background-color: #E10600;
+    background-color: var(--color-botones);
     border: none;
     color: white;
     font-size: 16px;
@@ -117,10 +131,9 @@ html {
 }
 
 .hero button:hover {
-    background-color: #B00000;
+    background-color: var(--color-botones);
 }
 
-/* Contenedor de botones */
 .cta-container {
     display: flex;
     flex-direction: column;
@@ -129,7 +142,6 @@ html {
     margin-top: 20px;
 }
 
-/* Botón WhatsApp (Principal) */
 .btn-wsp {
     padding: 15px 30px;
     background-color: #25D366; /* Verde característico de WSP */
@@ -143,7 +155,7 @@ html {
 }
 
 .btn-wsp:hover {
-    background-color: #128C7E;
+    background-color: #128C7E; /* Verde wsp hover*/
     transform: scale(1.05);
 }
 
@@ -161,8 +173,8 @@ html {
 }
 
 .btn-mail:hover {
-    background-color: #333;
-    border-color: #E10600;
+    background-color: var(--color-bg-principal);
+    border-color: var(--color-botones);
 }
 
 /* =========================
@@ -176,7 +188,7 @@ html {
 .section h2 {
     font-size: 32px;
     margin-bottom: 40px;
-    color: #E10600;
+    color: var(--color-red-dark);
 }
 
 .nosotros-p {
@@ -209,7 +221,7 @@ html {
 
 .servicios {
   padding: 100px 10%;
-  background-color: #0f0f0f;
+  background-color: var(--color-bg-principal);
   text-align: center;
   color: white;
 }
@@ -217,7 +229,7 @@ html {
 .servicios h2 {
   font-size: 2.5rem;
   margin-bottom: 60px;
-  color: #E10600; /* rojo TRS */
+  color: var(--color-red-dark);
   letter-spacing: 1px;
 }
 
@@ -228,7 +240,7 @@ html {
 }
 
 .servicio {
-  background-color: #1a1a1a;
+  background-color: var(--color-bg-alternativo);
   padding: 40px 30px;
   border-radius: 8px;
   border: 1px solid #2a2a2a;
@@ -237,19 +249,19 @@ html {
 
 .servicio:hover {
   transform: translateY(-8px);
-  border-color: #E10600;
+  border-color: var(--color-botones);
 }
 
 .servicio h3 {
   font-size: 1.4rem;
   margin-bottom: 20px;
-  color: #ffffff;
+  color: var(--color-texto-principal);
 }
 
 .servicio p {
   font-size: 0.95rem;
   margin-bottom: 30px;
-  color: #cccccc;
+  color: var(--color-texto-secundario);
   line-height: 1.6;
 }
 
@@ -257,7 +269,7 @@ html {
 .btn {
   display: inline-block;
   padding: 12px 28px;
-  background-color: #E10600;
+  background-color: var(--color-botones);
   color: white;
   text-decoration: none;
   font-weight: bold;
@@ -266,7 +278,7 @@ html {
 }
 
 .btn:hover {
-  background-color: #b00000;
+  background-color: var(--color-red-dark);
   transform: scale(1.05);
 }
 
@@ -275,7 +287,7 @@ html {
 
 .galeria {
   padding: 80px 10%;
-  background-color: #111;
+  background-color: var(--color-bg-principal);
   color: white;
   text-align: center;
 }
@@ -482,4 +494,31 @@ footer {
         flex-direction: column;
         justify-content: center; /* Centra el texto verticalmente junto a la imagen */
     }
+}
+
+/* 1. Estilo base: Fondo circular y color de marca */
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: rgba(255, 255, 255, 0.9); /* Blanco semitransparente */
+    color: #E10600; /* Tu rojo corporativo */
+    width: 40px !important; /* Tamaño del botón */
+    height: 40px !important;
+    border-radius: 50%; /* Círculo perfecto */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Una pequeña sombra para que resalte */
+    transition: all 0.3s ease; /* Efecto suave al pasar el mouse */
+}
+
+/* 2. Ajuste del tamaño del icono de la flecha */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 18px !important; /* El icono es más pequeño que el círculo */
+    font-weight: bold;
+}
+
+/* 3. Efecto al pasar el mouse (Hover) */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-color: #E10600; /* Fondo rojo al pasar el mouse */
+    color: white; /* Flecha blanca */
+    transform: scale(1.1); /* Crece un poquito */
 }

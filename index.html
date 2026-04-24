@@ -5,6 +5,10 @@
     <title>TRS | Tornería y Reparaciones Schaumeyer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 </head>
 
 <body>
@@ -82,20 +86,31 @@
         </div>
     </section>
 
-    <section id="galeria-torneria" class="galeria">
+    <section class="galeria">
         <h2>Trabajos de Tornería</h2>
-        <div class="grid-galeria" id="grid-torneria"></div>
+        <div class="swiper torneria-swiper">
+            <div class="swiper-wrapper" id="wrapper-torneria"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
     </section>
 
-    <section id="galeria-fabricacion" class="galeria">
-        <h2>Trabajos de Fabricación</h2>
-        <div class="grid-galeria" id="grid-fabricacion"></div>
+    <section class="galeria">
+        <h2>Trabajos de Fabricacion</h2>
+        <div class="swiper fabricacion-swiper">
+            <div class="swiper-wrapper" id="wrapper-fabricacion"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
     </section>
 
-
-    <section id="galeria-reparacion" class="galeria">
-        <h2>Trabajos de Reparación</h2>
-        <div class="grid-galeria" id="grid-reparacion"></div>
+    <section class="galeria">
+        <h2>Trabajos de reparacion</h2>
+        <div class="swiper reparacion-swiper">
+            <div class="swiper-wrapper" id="wrapper-reparacion"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
     </section>
 
     <section id="contacto" class="section">
@@ -112,9 +127,8 @@
 
     <footer>
         <p>TRS - Tornería y Reparaciones Schaumeyer</p>
-        <p>Berazategui, Buenos Aires</p>
+        <p>Calle 108 1999, Berazategui, Buenos Aires</p>
         <p>Celular +54 1133108864</p>
-        <p>Direccion Calle 108 1999</p>
     </footer>
 
     <div class="lightbox" id="lightbox">
@@ -133,5 +147,8 @@
     </div>
 
     <script src="script.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>
