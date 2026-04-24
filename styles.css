@@ -62,19 +62,27 @@ html {
 ========================= */
 .hero {
   height: 100vh; /* ocupa toda la pantalla */
-  background: 
-    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
-    url("images/fondo-hero.jpeg");
-    
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
+  transition: background-image 1s ease-in-out;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: white;
+}
+
+.hero-1 {
+    background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url("images/fondo-hero1.jpeg");
+}
+
+.hero-2 {
+    background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url("images/fondo-hero2.jpeg");
+}
+
+.hero-3 {
+    background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url("images/fondo-hero3.jpeg");
 }
 
 .hero-content {
@@ -171,9 +179,30 @@ html {
     color: #E10600;
 }
 
+.nosotros-p {
+    text-align: left;
+}
+
+#nosotros p {
+    text-align: left;
+    margin-bottom: 20px;
+    line-height: 1.6; /* Añadí esto para que el texto respire verticalmente */
+}
+
+@media (min-width: 1024px) {
+    #nosotros {
+        max-width: 900px; /* Ajusta este valor según tu preferencia */
+        margin: 0 auto;   /* Esto centra la sección en la pantalla */
+        padding: 40px 20px; /* Espaciado extra para que el texto no toque los bordes */
+    }
+}
+
 /* =========================
-   SERVICIOS
+   SECCIONES SOBRE NOSOTROS
 ========================= */
+
+
+
 /* =========================
    SECCIÓN SERVICIOS
 ========================= */

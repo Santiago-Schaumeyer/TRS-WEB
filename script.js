@@ -1,7 +1,5 @@
-// 1. Elementos base
 const lightbox = document.getElementById('lightbox');
 
-// 2. Base de datos
 const proyectos = [
     /* TRABAJOS DE TORNERIA */
     {
@@ -74,7 +72,7 @@ const proyectos = [
     },
 ];
 
-// 3. Renderizado: Crea las tarjetas dinámicamente
+
 function renderizarProyectos() {
     proyectos.forEach(p => {
         const contenedor = document.getElementById(`grid-${p.categoria}`);
@@ -91,7 +89,6 @@ function renderizarProyectos() {
     });
 }
 
-// 4. Lightbox: La única lógica necesaria
 function abrirLightbox(id) {
     const proyecto = proyectos.find(p => p.id === id);
     if (!proyecto) return;
@@ -108,7 +105,6 @@ function cerrarLightbox() {
     lightbox.style.display = 'none';
 }
 
-// 5. Evento para cerrar haciendo clic en el fondo oscuro
 lightbox.addEventListener('click', (e) => {
     // Si el clic es exactamente en el div lightbox (fondo) y no en la imagen/info
     if (e.target.id === 'lightbox') {
@@ -116,5 +112,18 @@ lightbox.addEventListener('click', (e) => {
     }
 });
 
-// Inicialización
 document.addEventListener('DOMContentLoaded', renderizarProyectos);
+
+// HERO QUE PASA IMAGENES 
+const hero = document.querySelector('.hero');
+
+const backgrounds = ['hero-1', 'hero-2', 'hero-3'];
+let currentIndex = 0;
+
+function changeHeroBackground() {
+    currentIndex = (currentIndex + 1) % backgrounds.length;
+
+    hero.className = 'hero ' + backgrounds[currentIndex];
+}
+
+setInterval(changeHeroBackground, 5000);
