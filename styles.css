@@ -99,6 +99,10 @@ html {
     background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url("images/fondo-hero3.jpeg");
 }
 
+.hero-4 {
+    background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url("images/fondo-hero4.jpeg");
+}
+
 .hero-content {
   max-width: 800px;
   padding: 20px;
@@ -315,6 +319,55 @@ html {
    FORMULARIO
 ========================= */
 
+
+.contacto-container {
+    display: flex;
+    flex-wrap: wrap; /* Para que en celulares se pongan uno debajo del otro */
+    gap: 40px;
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;    /* Un tamaño grande para que impacte */
+    color: var(--color-red-dark);          /* O el color corporativo que prefieras */
+    margin-bottom: 40px;  /* Espacio antes de que empiecen las columnas */
+    letter-spacing: 2px;
+}
+
+.contacto-form, .contacto-info {
+    flex: 1; /* Ambos ocupan el mismo espacio */
+    min-width: 300px; /* Tamaño mínimo antes de saltar a la siguiente fila */
+}
+
+/* Estilo profesional para el formulario */
+.contacto-form input, .contacto-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contacto-form button {
+    background-color: #E10600; /* Tu color rojo */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Estilo para el mapa */
+.mapa-container {
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden; /* Para que el mapa tenga esquinas redondeadas */
+}
+
 form input:focus, form textarea:focus {
     outline: 2px solid #E10600;
     background-color: #222;
@@ -361,6 +414,26 @@ button:active, .btn:active {
     transform: scale(0.98);
 }
 
+.contacto-info p {
+    display: flex;       /* Alinea icono y texto */
+    align-items: center; /* Centra verticalmente */
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.contacto-info i {
+    color: #E10600;      /* Tu rojo corporativo */
+    width: 30px;         /* Espacio fijo para que todos los iconos se alineen igual */
+    font-size: 1.2rem;   /* Tamaño un poquito más grande que el texto */
+    margin-right: 10px;  /* Espacio entre el icono y el texto */
+}
+
+/* Efecto hover opcional para el WhatsApp */
+.fab.fa-whatsapp:hover {
+    color: #25D366; /* El verde clásico de WhatsApp */
+    cursor: pointer;
+}
+
 /* =========================
    FOOTER
 ========================= */
@@ -405,9 +478,8 @@ footer {
         padding: 60px 20px;
     }
 }
-/* --- ESTILOS DEL LIGHTBOX (MODAL) --- */
-/* --- ESTILOS DEL LIGHTBOX (MODAL) CORREGIDOS --- */
 
+/* --- LIGHTBOX MINIMALISTA --- */
 .lightbox {
     display: none;
     position: fixed;
@@ -416,85 +488,94 @@ footer {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.85);
-    justify-content: center; /* Centra el modal en la pantalla */
-    align-items: center;     /* Centra el modal en la pantalla */
-    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9); /* Un poco más oscuro para que resalte la foto */
+    justify-content: center;
+    align-items: center;
     padding: 20px;
 }
 
 .lightbox-content {
+    position: relative; /* ¡Esto es lo más importante! El título flotará respecto a esto */
     display: flex;
-    flex-direction: column; 
-    background-color: #fff;
+    flex-direction: column;
+    background-color: transparent; /* Transparente porque la foto llena todo */
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-    max-width: 800px;
-    width: 90%;
+    max-width: 900px;
+    width: 100%;
     max-height: 90vh;
-    /* CAMBIO: Quitamos align-items: center para que el texto sea left-aligned */
-    align-items: stretch; 
-    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
 .lightbox-img {
     width: 100%;
-    max-height: 50vh; /* La imagen no domina toda la pantalla */
-    object-fit: contain;
-    background-color: #f4f4f4;
+    height: 100%;
+    max-height: 90vh;
+    object-fit: contain; /* Ajusta la foto sin deformarla */
     display: block;
 }
 
+/* El título flota sobre la imagen */
 .lightbox-info {
-    padding: 20px;
+    position: static; 
     width: 100%;
-    box-sizing: border-box;
-    text-align: left; /* Asegura el texto a la izquierda */
-    color: #0f0f0f;
+    padding: 15px 20px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7), transparent);
+    color: white;
+    z-index: 10;
 }
 
+.lightbox-info h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* Si quieres que la descripción sea ultra breve o no se vea */
+.lightbox-info p {
+    margin: 5px 0 0 0;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Botón cerrar: le damos un estilo más sutil o lo mantenemos igual */
 .cerrar {
     position: absolute;
     top: 10px;
     right: 15px;
     font-size: 30px;
-    font-weight: bold;
-    color: #333; /* <-- CAMBIA ESTO: Asegúrate de que sea oscuro (negro o gris) */
+    color: white;
     cursor: pointer;
-    z-index: 100; /* Un número alto para asegurar que flote sobre todo */
-    line-height: 1;
-    background: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente para mayor contraste */
-    padding: 5px 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc; /* Un borde fino ayuda a distinguirla */
+    z-index: 20; /* Aseguramos que esté sobre el título */
+    background: rgba(0,0,0,0.3);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.cerrar:hover {
-    color: #E10600; /* Rojo al pasar el mouse */
-    background: #fff;
+.nav-btn {
+    position: absolute;
+    top: 60%; /* Centrado vertical respecto al área de imagen */
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 30;
+    transition: background 0.3s;
 }
 
-/* --- ESTILO PARA ESCRITORIO --- */
-@media (min-width: 768px) {
-    .lightbox-content {
-        flex-direction: row; /* Imagen a la izq, texto a la der */
-        max-height: 70vh;    /* Un poco más bajo en escritorio */
-    }
-
-    .lightbox-img {
-        width: 50%;          /* La imagen ocupa la mitad */
-        max-height: 100%;    /* Ocupa todo el alto disponible */
-        object-fit: cover;   /* O usa 'contain' si prefieres ver la foto completa */
-    }
-
-    .lightbox-info {
-        width: 50%;          /* El texto ocupa la otra mitad */
-        display: flex;
-        flex-direction: column;
-        justify-content: center; /* Centra el texto verticalmente junto a la imagen */
-    }
+.nav-btn:hover {
+    background: rgba(225, 6, 0, 0.8); /* Tu color rojo TRS */
 }
+
+.prev { left: 10px; border-radius: 0 5px 5px 0; }
+.next { right: 10px; border-radius: 5px 0 0 5px; }
+
 
 /* 1. Estilo base: Fondo circular y color de marca */
 .swiper-button-next,
@@ -521,4 +602,12 @@ footer {
     background-color: #E10600; /* Fondo rojo al pasar el mouse */
     color: white; /* Flecha blanca */
     transform: scale(1.1); /* Crece un poquito */
+}
+
+.swiper-slide img {
+    width: 100%;       /* Ocupa todo el ancho disponible */
+    height: 300px;     /* Ajusta este valor a la altura que quieras (ej: 250px o 350px) */
+    object-fit: cover; /* ESTO ES LA CLAVE: Recorta la imagen para que llene el espacio sin deformarse */
+    display: block;    /* Elimina espacios extra debajo de la imagen */
+    border-radius: 8px; /* Opcional: para que las esquinas queden redondeadas */
 }
