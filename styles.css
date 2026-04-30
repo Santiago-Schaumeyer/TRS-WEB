@@ -88,19 +88,19 @@ html {
 }
 
 .hero-1 {
-    background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url("images/fondo-hero1.jpeg");
+    background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url("images/fondo-hero1.webp");
 }
 
 .hero-2 {
-    background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url("images/fondo-hero2.jpeg");
+    background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url("images/fondo-hero2.webp");
 }
 
 .hero-3 {
-    background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url("images/fondo-hero3.jpeg");
+    background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url("images/fondo-hero3.webp");
 }
 
 .hero-4 {
-    background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url("images/fondo-hero4.jpeg");
+    background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url("images/fondo-hero4.webp");
 }
 
 .hero-content {
