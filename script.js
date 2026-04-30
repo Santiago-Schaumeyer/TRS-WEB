@@ -7,112 +7,112 @@ const proyectos = [
         categoria: "torneria",
         titulo: "Cortantes para moldes plasticos",
         descripcion: "Cortantes para bidones plasticos de 5L.",
-        img: "images/servicios/servicio-torneria1.jpeg"
+        img: "images/servicios/servicio-torneria1.webp"
     },
     {
         id: 12,
         categoria: "torneria",
         titulo: "Tornillos TwinTape",
         descripcion: "Tornillos M6 TwinTape fabricados en acero Inoxidable",
-        img: "images/servicios/servicio-torneria2.jpeg"
+        img: "images/servicios/servicio-torneria2.webp"
     },
     {
         id: 13,
         categoria: "torneria",
         titulo: "Eje de transmisión industrial",
         descripcion: "Mecanizado de precisión para maquinaria agrícola.",
-        img: "images/servicios/servicio-torneria3.jpeg"
+        img: "images/servicios/servicio-torneria3.webp"
     },
     {
         id: 14,
         categoria: "torneria",
         titulo: "Punzones para prensa de Extrusion",
         descripcion: "Mecanizado de Punzones en H13",
-        img: "images/servicios/servicio-torneria4.jpeg"
+        img: "images/servicios/servicio-torneria4.webp"
     },
     {
         id: 15,
         categoria: "torneria",
         titulo: "Componentes Valvula direccional",
         descripcion: "",
-        img: "images/servicios/servicio-torneria5.jpeg"
+        img: "images/servicios/servicio-torneria5.webp"
     },
     {
         id: 16,
         categoria: "torneria",
         titulo: "Engranaje",
         descripcion: "",
-        img: "images/servicios/servicio-torneria6.jpeg"
+        img: "images/servicios/servicio-torneria6.webp"
     },
     {
         id: 17,
         categoria: "torneria",
         titulo: "Juego de engranaje de caja reductora",
         descripcion: "",
-        img: "images/servicios/servicio-torneria7.jpeg"
+        img: "images/servicios/servicio-torneria7.webp"
     },
     {
         id: 18,
         categoria: "torneria",
         titulo: "Juego de engranaje de caja reductora",
         descripcion: ".",
-        img: "images/servicios/servicio-torneria8.jpeg"
+        img: "images/servicios/servicio-torneria8.webp"
     },
     {
         id: 19,
         categoria: "torneria",
         titulo: "",
         descripcion: ".",
-        img: "images/servicios/servicio-torneria9.jpeg"
+        img: "images/servicios/servicio-torneria9.webp"
     },
     {
         id: 110,
         categoria: "torneria",
         titulo: "",
         descripcion: ".",
-        img: "images/servicios/servicio-torneria10.jpeg"
+        img: "images/servicios/servicio-torneria10.webp"
     },
     {
         id: 111,
         categoria: "torneria",
         titulo: "",
         descripcion: ".",
-        img: "images/servicios/servicio-torneria11.jpeg"
+        img: "images/servicios/servicio-torneria11.webp"
     },
     {
         id: 112,
         categoria: "torneria",
         titulo: "",
         descripcion: ".",
-        img: "images/servicios/servicio-torneria12.jpeg"
+        img: "images/servicios/servicio-torneria12.webp"
     },
     {
         id: 113,
         categoria: "torneria",
         titulo: "",
         descripcion: ".",
-        img: "images/servicios/servicio-torneria13.jpeg"
+        img: "images/servicios/servicio-torneria13.webp"
     },
     {
         id: 114,
         categoria: "torneria",
         titulo: "",
         descripcion: ".",
-        img: "images/servicios/servicio-torneria14.jpeg"
+        img: "images/servicios/servicio-torneria14.webp"
     },
     {
         id: 115,
         categoria: "torneria",
         titulo: "",
         descripcion: ".",
-        img: "images/servicios/servicio-torneria15.jpeg"
+        img: "images/servicios/servicio-torneria15.webp"
     },
     {
         id: 116,
         categoria: "torneria",
         titulo: "",
         descripcion: ".",
-        img: "images/servicios/servicio-torneria16.jpeg"
+        img: "images/servicios/servicio-torneria16.webp"
     },
 
     /* TRABAJOS DE FABRICACION */
@@ -121,84 +121,84 @@ const proyectos = [
         categoria: "fabricacion",
         titulo: "Mecheros para Horno de recocido",
         descripcion: ".",
-        img: "images/servicios/servicio-fabricacion1.jpeg"
+        img: "images/servicios/servicio-fabricacion1.webp"
     },
     {
         id: 22,
         categoria: "fabricacion",
         titulo: "Cuchillas para molienda",
         descripcion: "Mecanizado de cuchillas en EK para molienda de plastico.",
-        img: "images/servicios/servicio-fabricacion2.jpeg"
+        img: "images/servicios/servicio-fabricacion2.webp"
     },
     {
         id: 23,
         categoria: "fabricacion",
         titulo: "Adaptadores para piston hidraulico",
         descripcion: "Fabricacion de adaptadores para reformar maquina cortadora de bolsas plasticas.",
-        img: "images/servicios/servicio-fabricacion3.jpeg"
+        img: "images/servicios/servicio-fabricacion3.webp"
     },
     {
         id: 24,
         categoria: "fabricacion",
         titulo: "Comando completo para prensa de extrusion",
         descripcion: "",
-        img: "images/servicios/servicio-fabricacion4.jpeg"
+        img: "images/servicios/servicio-fabricacion4.webp"
     },
     {
         id: 25,
         categoria: "fabricacion",
         titulo: "Sistema para regular bobinadora de tela plastica",
         descripcion: "",
-        img: "images/servicios/servicio-fabricacion5.jpeg"
+        img: "images/servicios/servicio-fabricacion5.webp"
     },
     {
         id: 26,
         categoria: "fabricacion",
         titulo: "",
         descripcion: "",
-        img: "images/servicios/servicio-fabricacion6.jpeg"
+        img: "images/servicios/servicio-fabricacion6.webp"
     },
     {
         id: 27,
         categoria: "fabricacion",
         titulo: "",
         descripcion: "",
-        img: "images/servicios/servicio-fabricacion7.jpeg"
+        img: "images/servicios/servicio-fabricacion7.webp"
     },
     {
         id: 28,
         categoria: "fabricacion",
         titulo: "",
         descripcion: "",
-        img: "images/servicios/servicio-fabricacion8.jpeg"
+        img: "images/servicios/servicio-fabricacion8.webp"
     },
     {
         id: 29,
         categoria: "fabricacion",
         titulo: "",
         descripcion: "",
-        img: "images/servicios/servicio-fabricacion9.jpeg"
+        img: "images/servicios/servicio-fabricacion9.webp"
     },
     {
         id: 210,
         categoria: "fabricacion",
         titulo: "",
         descripcion: "",
-        img: "images/servicios/servicio-fabricacion10.jpeg"
+        img: "images/servicios/servicio-fabricacion10.webp"
     },
     {
         id: 211,
         categoria: "fabricacion",
         titulo: "",
         descripcion: "",
-        img: "images/servicios/servicio-fabricacion11.jpeg"
+        img: "images/servicios/servicio-fabricacion11.webp"
     },
     {
         id: 212,
         categoria: "fabricacion",
         titulo: "",
         descripcion: "",
-        img: "images/servicios/servicio-fabricacion12.jpeg"
+        img: "images/servicios/servicio-fabricacion12.webp"
     },
 
     /* TRABAJOS DE REPARACION */
@@ -208,63 +208,63 @@ const proyectos = [
         categoria: "reparacion",
         titulo: "Punta de eje camion Scania",
         descripcion: "Extraccion de punta partida y mecanizado de una nueva para su colocacion.",
-        img: "images/servicios/servicio-reparacion1.jpeg"
+        img: "images/servicios/servicio-reparacion1.webp"
     },
     {
         id: 32,
         categoria: "reparacion",
         titulo: "Regulador de Laminadora",
         descripcion: ".",
-        img: "images/servicios/servicio-reparacion2.jpeg"
+        img: "images/servicios/servicio-reparacion2.webp"
     },
     {
         id: 33,
         categoria: "reparacion",
         titulo: "Caja de camion Mercedes Benz",
         descripcion: ".",
-        img: "images/servicios/servicio-reparacion3.jpeg"
+        img: "images/servicios/servicio-reparacion3.webp"
     },
     {
         id: 34,
         categoria: "reparacion",
         titulo: "",
         descripcion: ".",
-        img: "images/servicios/servicio-reparacion4.jpeg"
+        img: "images/servicios/servicio-reparacion4.webp"
     },
     {
         id: 35,
         categoria: "reparacion",
         titulo: "",
         descripcion: ".",
-        img: "images/servicios/servicio-reparacion5.jpeg"
+        img: "images/servicios/servicio-reparacion5.webp"
     },
     {
         id: 36,
         categoria: "reparacion",
         titulo: "",
         descripcion: ".",
-        img: "images/servicios/servicio-reparacion6.jpeg"
+        img: "images/servicios/servicio-reparacion6.webp"
     },
     {
         id: 37,
         categoria: "reparacion",
         titulo: "",
         descripcion: ".",
-        img: "images/servicios/servicio-reparacion7.jpeg"
+        img: "images/servicios/servicio-reparacion7.webp"
     },
     {
         id: 38,
         categoria: "reparacion",
         titulo: "",
         descripcion: ".",
-        img: "images/servicios/servicio-reparacion8.jpeg"
+        img: "images/servicios/servicio-reparacion8.webp"
     },
     {
         id: 39,
         categoria: "reparacion",
         titulo: "",
         descripcion: ".",
-        img: "images/servicios/servicio-reparacion9.jpeg"
+        img: "images/servicios/servicio-reparacion9.webp"
     },
 ];
 
@@ -277,7 +277,7 @@ function renderizarProyectos() {
         const card = document.createElement('div');
         card.className = 'card-proyecto';
         card.innerHTML = `
-            <img src="${p.img}" alt="${p.titulo}" onclick="abrirLightbox(${p.id})" style="cursor:pointer;">
+            <img src="${p.img}" alt="${p.titulo}" loading="lazy" onclick="abrirLightbox(${p.id})" style="cursor:pointer;">
             <h3>${p.titulo}</h3>`;
         contenedor.appendChild(card);
     });
@@ -356,7 +356,7 @@ document.addEventListener('DOMContentLoaded', () => {
             slide.innerHTML = `
                 <img src="${p.img}" alt="${p.titulo}" 
                      onclick="abrirLightbox(${p.id})" 
-                     style="cursor:pointer; width: 100%;">
+                     style="cursor:pointer; width: 100%;" loading="lazy">
             `;
             wrapper.appendChild(slide);
         });
@@ -398,7 +398,7 @@ document.addEventListener('keydown', (event) => {
         else if (event.key === 'ArrowLeft') {
             cambiarImagen(-1);
         }
-        // Tecla ESC -> Cerrar Lightbox 
+        // Tecla ESC -> Cerrar Lightbox https://github.com/Santiago-Schaumeyer/TRS-WEB.gi
         else if (event.key === 'Escape') {
             cerrarLightbox();
         }
